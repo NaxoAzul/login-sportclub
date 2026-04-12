@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Administrador</title>
+    <link rel="stylesheet" href="css/style_login.css">
+</head>
+
+<body class="admin">
+
+<!-- HEADER -->
+<header class="dashboard-header">
+    <img src="img/logo.png" alt="Logo SportClub" class="logo">
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Usuarios</a>
+        <a href="#">Reportes</a>
+        <a href="#">Configuración</a>
+    </nav>
+
+    <div class="acciones">
+        <button>Editar perfil</button>
+        <a href="login.html"><button>Cerrar sesión</button></a>
+    </div>
+</header>
+
+<!-- MAIN -->
+<main class="dashboard">
+
+    <h2>Dashboard Administrador</h2>
+
+    <!-- FILA SUPERIOR -->
+    <section class="top">
+
+        <!-- GESTIÓN DE USUARIOS -->
+        <article class="card perfil">
+            <h3>Gestión de Usuarios</h3>
+            <p><strong>Juan Pérez</strong> - usuario</p>
+            <p><strong>Ana Gómez</strong> - coach</p>
+            <p><strong>Carlos Díaz</strong> - administrador</p>
+            <p><strong>Laura Martínez</strong> - usuario</p>
+        </article>
+
+        <!-- ESTADÍSTICAS -->
+        <article class="card progreso">
+            <h3>Estadísticas</h3>
+            <p>Total usuarios: 45</p>
+            <p>Total coaches: 8</p>
+            <p>Total clases: 12</p>
+        </article>
+
+        <!-- PANEL DE CONTROL 1 -->
+        <article class="card clases">
+            <h3>Panel de Control</h3>
+            <p>Usuarios activos: 38 <button>Ver</button></p>
+            <p>Clases del día: 6 <button>Ver</button></p>
+            <p>Reservas hoy: 24 <button>Ver</button></p>
+        </article>
+
+        <!-- PANEL DE CONTROL 2 -->
+        <article class="card reservas">
+            <h3>Resumen Rápido</h3>
+            <p>Ingresos mensuales: $12,500</p>
+            <p>Clases más populares: Spinning</p>
+            <p>Tasa ocupación: 78%</p>
+        </article>
+
+    </section>
+
+    <!-- BLOQUE INFERIOR -->
+    <section class="bottom card">
+        <h3>Reportes Generales</h3>
+
+        <p>Informe mensual de actividad <button>Descargar</button></p>
+        <p>Reporte de reservas <button>Descargar</button></p>
+        <p>Estadísticas de usuarios <button>Descargar</button></p>
+    </section>
+
+</main>
+
+</body>
+</html>
