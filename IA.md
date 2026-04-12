@@ -1,5 +1,5 @@
 Herramienta utilizada: ChatGPT
-Fecha: 27-03-2026
+Fecha: 09-04-2026
 Prompt utilizado: Necesito que me ayudes a desarrollar una página de login utilizando HTML5 con estructura semantica evitando exceso de "div" y CSS3 usando margin, padding, border y tipografia.
 Resultado generado: Codigo base generado 
 Modificación: Valores generados de css, cambio de colores y creacion de las carpetas.
