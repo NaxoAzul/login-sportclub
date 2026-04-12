@@ -8,7 +8,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #2E1A47;
 
     display: flex;
     justify-content: center;
@@ -102,4 +102,77 @@ button:hover {
     margin-top: 15px;
     color: green;
     font-size: 14px;
+}
+
+/* HEADER */
+.landing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2E1A47;
+}
+
+.landing-header img {
+    width: 220px;
+}
+
+.btn-login {
+    background-color: #4CAF50;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #2E1A47;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.btn-principal {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SECCIONES */
+.info, .beneficios, .vision {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.beneficios ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.beneficios li {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2E1A47;
+    color: white;
+    text-align: center;
+    padding: 26px;
+}
+
+.landing {
+    display: block;
+    height: auto;
 }
