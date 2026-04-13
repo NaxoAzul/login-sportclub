@@ -32,11 +32,11 @@ body {
 .card {
     background-color: white;
 
-    padding: 25px;           
+    padding: 35px;           
     border: 1px solid #ccc;  
     border-radius: 10px;
 
-    margin: 10px;            
+    margin: 0px;            
 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -99,6 +99,7 @@ button:hover {
 
 .mensaje {
     margin-top: 15px;
+    margin-bottom: 15px;
     color: green;
     font-size: 14px;
 }
@@ -149,7 +150,7 @@ button:hover {
 
 /* SECCIONES */
 .info, .beneficios, .vision {
-    padding: 40px 20px;
+    padding: 0px 0px;
     text-align: center;
     background-color: #FFFFFF;
 }
@@ -273,7 +274,7 @@ body.usuario {
     background-color: #2e7d32;
 }
 
-/* Asegurar que coach tenga el mismo layout que usuario */
+
 .coach .top {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
