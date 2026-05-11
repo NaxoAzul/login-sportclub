@@ -204,8 +204,8 @@ footer {
 }
 
 /* COLOR USUARIO */
-.usuario .dashboard-header {
-    background-color: rgb(50, 50, 189);
+.user .dashboard-header {
+    background-color: #1565c0;
 }
 
 /* NAV */
@@ -294,12 +294,6 @@ body.usuario {
     margin-top: 20px;
 }
 
-.coach body {
-    display: block;
-    height: auto;
-    background-color: #f2f2f2;
-}
-
 .coach .bottom {
     margin-top: 20px;
     max-width: 600px;
@@ -310,22 +304,164 @@ body.usuario {
     background-color: #f2f2f2;
 }
 
-.coach {
-    display: block;
-    background-color: #f2f2f2;
-}
-
 /* ADMIN COLOR */
 .admin .dashboard-header {
     background-color: #8B0000;
 }
 
-.admin {
-    display: block;
-    background-color: #f2f2f2;
-}
-
 .admin .bottom {
     margin-top: 20px;
     max-width: 600px;
+}
+
+/* TABLA USUARIOS */
+
+.tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla-usuarios th {
+    background-color: #b30000;
+    color: white;
+}
+
+/* BOTÓN PEQUEÑO */
+
+.btn-pequeno {
+    width: auto !important;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+/* BOTÓN NUEVO USUARIO */
+
+.btn-nuevo {
+    width: auto !important;
+    background-color: #1e88e5;
+    padding: 12px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.btn-nuevo:hover {
+    background-color: #1565c0;
+}
+
+/* BOTONES CRUD */
+
+.btn-editar,
+.btn-eliminar {
+    width: auto !important;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-editar {
+    background-color: #2196f3;
+    margin-right: 5px;
+}
+
+.btn-eliminar {
+    background-color: #e53935;
+}
+
+.btn-azul {
+    background-color: #2196f3;
+    color: white;
+}
+
+/* ===== PERFIL ===== */
+
+.perfil-card {
+    padding: 30px;
+}
+
+.perfil-top {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 4px solid #1976d2;
+
+    background: #f0f0f0;
+
+    padding: 5px;
+}
+
+.badge-role {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    background: green;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.perfil-info {
+    margin-top: 25px;
+
+    border-top: 1px solid #ddd;
+
+    padding-top: 20px;
+}
+
+/* HEADER SEGUN ROL */
+
+.admin .dashboard-header {
+    background: #a30000;
+}
+
+.user .dashboard-header {
+    background: #1565c0;
+}
+
+.coach .dashboard-header {
+    background: #2e7d32;
+}
+
+/* BODY DASHBOARDS */
+
+body.admin,
+body.coach,
+body.user,
+body.usuario {
+    display: block;
+    height: auto;
+    background-color: #f2f2f2;
+}
+
+#nombreUsuario {
+    color: white;
+    margin-right: 15px;
+    font-weight: bold;
 }

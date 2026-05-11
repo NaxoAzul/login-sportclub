@@ -5,7 +5,7 @@
     <title>Dashboard Administrador</title>
     <link rel="stylesheet" href="css/style_login.css">
 </head>
-
+<script src="js/dashboardUser.js"></script>
 <body class="admin">
 
 <!-- HEADER -->
@@ -14,13 +14,17 @@
 
     <nav>
         <a href="#">Inicio</a>
-        <a href="#">Usuarios</a>
+        <a href="moduloAdmin.html">Usuarios</a>
         <a href="#">Reportes</a>
         <a href="#">Configuración</a>
     </nav>
 
     <div class="acciones">
-        <button>Editar perfil</button>
+        <a href="perfil.html">
+            <button class="btn-dashboard">
+                Editar perfil
+            </button>
+        </a>
         <a href="login.html"><button>Cerrar sesión</button></a>
     </div>
 </header>
@@ -34,12 +38,11 @@
     <section class="top">
 
         <!-- GESTIÓN DE USUARIOS -->
-        <article class="card perfil">
-            <h3>Gestión de Usuarios</h3>
-            <p><strong>Juan Pérez</strong> - usuario</p>
-            <p><strong>Ana Gómez</strong> - coach</p>
-            <p><strong>Carlos Díaz</strong> - administrador</p>
-            <p><strong>Laura Martínez</strong> - usuario</p>
+        <article class="card progreso">
+            <h3>Mi información</h3>
+            <p><strong>Nombre:</strong> <span id="nombreDashboard"></span></p>
+            <p><strong>Email:</strong> <span id="emailDashboard"></span></p>
+            <p><strong>Rol:</strong> Administrador</p>
         </article>
 
         <!-- ESTADÍSTICAS -->

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Módulo Administración</title>
+    <link rel="stylesheet" href="css/style_login.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="admin">
+
+<!-- HEADER -->
+<header class="dashboard-header">
+
+    <img src="img/logo.png" alt="Logo SportClub" class="logo">
+
+    <nav>
+        <a href="dashboard-admin.html">Dashboard</a>
+        <a href="moduloAdmin.html">Usuarios</a>
+    </nav>
+
+    <div class="acciones">
+        <a href="login.html">
+            <button class="btn-azul">Cerrar sesión</button>
+        </a>
+    </div>
+
+</header>
+
+<!-- CONTENIDO -->
+<main class="dashboard">
+
+    <h2>Gestión de Usuarios</h2>
+
+    <p>Administra los usuarios del sistema.</p>
+    
+    <button class="btn-nuevo">+ Nuevo Usuario</button>
+
+    <!-- FORMULARIO -->
+    <section class="card">
+
+        <h3 id="tituloFormulario">Nuevo Usuario</h3>
+
+        <form id="userForm">
+
+            <label>Nombre completo</label>
+            <input type="text" id="nombre">
+
+            <label>Email</label>
+            <input type="email" id="email">
+
+            <label>Rol</label>
+            <select id="rol">
+                <option value="user">User</option>
+                <option value="coach">Coach</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <label>Fecha de Nacimiento</label>
+            <input type="date" id="fecha">
+
+            <label>Contraseña</label>
+            <input type="password" id="password">
+
+            <label>Confirmar contraseña</label>
+            <input type="password" id="password2">
+
+            <button type="submit" class="btn-pequeno btn-azul">
+                Crear Usuario
+            </button>
+
+            <p class="mensaje"></p>
+
+        </form>
+
+    </section>
+
+    <!-- TABLA -->
+    <section class="card">
+
+        <h3>Lista de Usuarios</h3>
+
+        <table class="tabla-usuarios">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Rol</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Fecha Registro</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablaUsuarios">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>
