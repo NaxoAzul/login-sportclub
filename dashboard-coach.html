@@ -5,7 +5,7 @@
     <title>Dashboard Coach</title>
     <link rel="stylesheet" href="css/style_login.css">
 </head>
-
+<script src="js/dashboardUser.js"></script>
 <body class="coach">
 
 <!-- HEADER -->
@@ -19,7 +19,11 @@
     </nav>
 
     <div class="acciones">
-        <button>Editar perfil</button>
+        <a href="perfil.html">
+            <button class="btn-dashboard">
+                Editar perfil
+            </button>
+        </a>
         <a href="login.html"><button>Cerrar sesión</button></a>
     </div>
 </header>
@@ -32,6 +36,13 @@
     <!-- FILA SUPERIOR -->
     <section class="top">
 
+        <article class="card progreso">
+            <h3>Mi información</h3>
+            <p><strong>Nombre:</strong> <span id="nombreDashboard"></span></p>
+            <p><strong>Email:</strong> <span id="emailDashboard"></span></p>
+            <p><strong>Rol:</strong> Coach</p>
+        </article>
+
         <article class="card perfil">
             <h3>Mis Alumnos</h3>
             <p><strong>Juan Pérez</strong> - juan@email.com</p>
@@ -41,11 +52,6 @@
             <p><button>Ver más</button></p>
         </article>
 
-        <article class="card progreso">
-            <h3>Resumen</h3>
-            <p>Clases hoy: 3</p>
-            <p>Alumnos: 25</p>
-        </article>
 
         <article class="card clases">
             <h3>Mi Horario</h3>

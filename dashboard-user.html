@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="css/style_login.css">
 </head>
 
-<body class="usuario">
+<script src="js/dashboardUser.js"></script>
+
+<body class="user">
 
 <!-- HEADER -->
 <header class="dashboard-header">
@@ -19,7 +21,13 @@
     </nav>
 
     <div class="acciones">
-        <button>Editar perfil</button>
+        <span id="nombreUsuario"></span>
+        
+        <a href="perfil.html">
+            <button class="btn-dashboard">
+                Editar perfil
+            </button>
+        </a>
         <a href="login.html"><button>Cerrar sesión</button></a>
     </div>
 </header>
@@ -35,8 +43,8 @@
         <!-- PERFIL -->
         <article class="card perfil">
             <h3>Mi Perfil</h3>
-            <p><strong>Nombre:</strong> Juan Pérez</p>
-            <p><strong>Email:</strong> juan@email.com</p>
+            <p><strong>Nombre:</strong> <span id="nombreDashboard"></span></p>
+            <p><strong>Email:</strong> <span id="emailDashboard"></span></p>
 
             <h4>Objetivos:</h4>
             <ul>

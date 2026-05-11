@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Perfil</title>
+
+    <link rel="stylesheet" href="css/style_login.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="admin">
+
+<!-- HEADER -->
+<header class="dashboard-header">
+
+    <img src="img/logo.png" alt="Logo SportClub" class="logo">
+
+    <nav>
+        <a href="#" id="volverDashboard">Dashboard</a>
+        <a href="perfil.html" class="activo">Perfil</a>
+    </nav>
+
+    <div class="acciones">
+        <a href="login.html">
+            <button class="btn-azul">Cerrar sesión</button>
+        </a>
+    </div>
+
+</header>
+
+<!-- CONTENIDO -->
+<main class="dashboard">
+
+    <h2>Mi Perfil</h2>
+
+    <p>Gestiona tu información personal.</p>
+
+    <!-- CARD PERFIL -->
+    <section class="card perfil-card">
+
+        <div class="perfil-top">
+
+            <img src="https://i.pravatar.cc/150" alt="Perfil" class="foto-perfil">
+
+            <div>
+
+                <h3 id="perfilNombre">Usuario</h3>
+
+                <p id="perfilEmail">email@demo.cl</p>
+
+                <span id="perfilRol" class="badge-role">
+                    user
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="perfil-info">
+
+            <p>
+                <strong>Fecha nacimiento:</strong>
+                <span id="perfilFecha">--/--/----</span>
+            </p>
+
+            <p>
+                <strong>Fecha registro:</strong>
+                <span id="perfilRegistro">--/--/----</span>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="card">
+
+        <h3>Editar Perfil</h3>
+
+        <form id="perfilForm">
+
+            <label>Nombre completo</label>
+            <input type="text" id="nombre">
+
+            <label>Email</label>
+            <input type="email" id="email" readonly>
+
+            <label>Fecha nacimiento</label>
+            <input type="date" id="fecha">
+
+            <button type="submit" class="btn-pequeno btn-azul">
+                Guardar cambios
+            </button>
+
+            <p class="mensaje"></p>
+
+        </form>
+
+    </section>
+
+    <!-- CAMBIAR PASSWORD -->
+    <section class="card">
+
+        <h3>Cambiar contraseña</h3>
+
+        <form id="passwordForm">
+        
+            <label>Contraseña actual</label>
+            <input type="password" id="currentPassword">
+        
+            <label>Nueva contraseña</label>
+            <input type="password" id="newPassword">
+        
+            <label>Confirmar contraseña</label>
+            <input type="password" id="confirmPassword">
+        
+            <button type="submit" class="btn-pequeno btn-azul">
+                Cambiar contraseña
+            </button>
+        
+            <p class="mensajePassword"></p>
+        
+        </form>
+
+    </section>
+
+</main>
+
+<script src="js/perfil.js"></script>
+
+</body>
+</html>
